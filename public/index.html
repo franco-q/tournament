@@ -1,17 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>tournament</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but tournament doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+	<link rel="stylesheet" href="<%= BASE_URL %>css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<title>ceara-admin</title>
+	<style>
+		.round{
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			width:200px;
+			list-style:none;
+			padding:0;
+			margin: 0;
+		}
+		
+		.round .spacer{ flex-grow:1; }
+		.round .spacer:first-child,
+		.round .spacer:last-child{ flex-grow:.5; }
+
+		.round .game-spacer{
+			flex-grow:1;
+		}
+
+		li.game{
+			padding-left:20px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		li.game.winner{
+			font-weight:bold;
+		}
+		li.game .score{
+			margin-right:5px;
+		}
+
+		li.game-top{ 
+			border-bottom:1px solid #aaa; 
+		}
+
+		li.game-spacer{ 
+			border-right:1px solid #aaa;
+			min-height:40px;
+		}
+
+		li.game-bottom{ 
+			border-top:1px solid #aaa;
+		}
+	</style>
+</head>
+<body>
+	<noscript>
+		<strong>We're sorry but ceara-admin doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+	</noscript>
+	<div id="app"></div>
+</body>
 </html>
